@@ -40,7 +40,7 @@
     </div>
   </nav>
   <!-- mobile mode -->
-  <section class="mobile-mode-menu-bar">
+  <!-- <section class="mobile-mode-menu-bar">
     <div class="container d-flex">
       <div class="col-sm-4 col-md-4 " >
         <a href="javascript:void(0);" class="icon text-dark" onclick="myFunction()">
@@ -105,7 +105,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- menu bar -->
   <div class="menu">
@@ -148,6 +148,9 @@
             <li class="nav-item">
               <a class="nav-link disabled text-dark"><span class="menu-bar">Sale</span></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="coupon.html"><span class="menu-bar">Coupon</span></a>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -155,7 +158,38 @@
           </form>
         </div>
       </div>
+         <!--hamburger menu-->
+         <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
     </nav>
+  </div>
+  <!--mobile menu-->
+  <div class="mobile-menu hidden" id="menu">
+    <ul>
+      <li>
+        <a href="#">Menu</a>
+      </li>
+      <li>
+        <a href="#">Rewards</a>
+      </li>
+      <li>
+        <a href="#">Gift Cards</a>
+      </li>
+    </ul>
+    <div class="mobile-menu-bottom">
+      <button class="btn btn-dark-outline">Sign in</button>
+      <button class="btn btn-dark">Join now</button>
+      <div>
+        <a href="#">
+        <img src="image/marker.svg" alt="">
+        <span>Find a store</span>
+        </a>
+      </div>
+      
+    </div>
   </div>
   <!-- banner --> 
   <section class="banner">
@@ -664,5 +698,6 @@
     }
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="homepage.js"></script>
 </body>
 </html>
