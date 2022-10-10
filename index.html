@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="body-blur">
   <!-- top bar -->
   <nav class="navbar navbar-expand-lg bg-dark top-bar">
     <div class="container-fluid text-center">
@@ -39,12 +39,32 @@
       </div>
     </div>
   </nav>
+  <!-- coupon -->
+  <section id="coupon-code " class="coupon-code">
+    <div class="bd-margin" >
+      <div class="container coupon text-center">
+        <div class="card coupon-card">
+          <span id='close'>x</span>
+          <a href="https://imgbb.com/"><img src="https://i.ibb.co/yBvMgM2/icon.png" alt="icon" border="0"></a><br /><a target='_blank' href='https://whatsmyscreenresolution.com/'></a>
+          <h5>Chique</h5> 
+          <h3><b>Buy Exclusive Chique Dresses</b></h3>
+          <h5><b>30% flat off</b></h5>
+          <div class="coupon-row">
+            <button type="button" class="btn btn-outline-light text-light" id="cpncode" type="button">STEALDEAL30</button>
+            <button type="button" class="btn btn-light text-dark" id="cpnbtn" type="button">COPY CODE</button>
+          </div>
+          <br>
+          <P>Valid Till: 30 Oct, 2022</P>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- mobile mode -->
-  <!-- <section class="mobile-mode-menu-bar">
+  <section class="mobile-mode-menu-bar">
     <div class="container d-flex">
       <div class="col-sm-4 col-md-4 " >
         <a href="javascript:void(0);" class="icon text-dark" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-bars" id="icon"></i>
         </a>
         <div id="myLinks">
           <form class="d-flex" role="search">
@@ -91,7 +111,7 @@
         </div>
       </div>
       <div class="col-sm-4 col-md-4 mode-margin">
-        <a class="navbar-brand" href="#"><img src="image/logo.png" alt="logo" width="" height="40px"></a>
+        <a class="navbar-brand" href="#"><img src="image/logo.png" alt="logo" width="" height="40px" class="ms-5"></a>
       </div>
       <div class="col-sm-4 col-md-4 text-black mode-margin">
         <div class=" mode-size">
@@ -105,15 +125,15 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- menu bar -->
-  <div class="menu">
+  <div class="menu ">
     <nav class="navbar navbar-expand-lg bg-menu  menu-bar sticky-top ">
       <div class="container text-center">
         <div class="collapse navbar-collapse nav-menu-bar " id="navbarScroll">
           <a class="navbar-brand" href="#"><img src="image/logo.png" alt="logo" width="100%" height="68px"></a>
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll menu-margin" style="--bs-scroll-height: 100px;">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll menu-margin position-relative" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"><span class="menu-bar">New In</span></a>
             </li>
@@ -148,9 +168,6 @@
             <li class="nav-item">
               <a class="nav-link disabled text-dark"><span class="menu-bar">Sale</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="coupon.html"><span class="menu-bar">Coupon</span></a>
-            </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -158,12 +175,6 @@
           </form>
         </div>
       </div>
-         <!--hamburger menu-->
-         <button type="button" class="hamburger" id="menu-btn">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
     </nav>
   </div>
   <!--mobile menu-->
@@ -182,13 +193,6 @@
     <div class="mobile-menu-bottom">
       <button class="btn btn-dark-outline">Sign in</button>
       <button class="btn btn-dark">Join now</button>
-      <div>
-        <a href="#">
-        <img src="image/marker.svg" alt="">
-        <span>Find a store</span>
-        </a>
-      </div>
-      
     </div>
   </div>
   <!-- banner --> 
@@ -644,6 +648,7 @@
       </div>
     </div>
   </div>
+  
   <script>
     $('.owl-one').owlCarousel({
     loop:true,
@@ -687,16 +692,6 @@
     }
     })
   </script>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <script src="homepage.js"></script>
 </body>

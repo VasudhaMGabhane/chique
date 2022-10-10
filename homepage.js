@@ -1,11 +1,18 @@
-const btn = document.getElementById('menu-btn')
-const nav = document.getElementById('menu')
-
-function navToggle() {
-  btn.classList.toggle('open')
-  nav.classList.toggle('hidden')
-  document.body.classList.toggle('no-scroll')
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  var y = document.getElementById("icon");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   
+  }
 }
 
-btn.addEventListener('click',navToggle)
+// coupon
+window.onload = function(){
+  document.getElementById('close').onclick = function(){
+   this.parentNode.parentNode.remove();
+   return false;
+  }
+}
